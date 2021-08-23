@@ -11,7 +11,7 @@ class Arguments:
         parser.add_argument(
             "-d",
             "--dictionary",
-            default="medium",
+            default="easy",
             type=str,
             choices=["easy", "medium", "hard", "jazda", "my_dict"],
             help="Possible dictionaries: easy, medium, hard, jazda, my_dict",
