@@ -50,7 +50,7 @@ class Alias:
         self.number_of_teams = number_of_teams
         self.time = time
         self.number_of_words = number_of_words
-        with open("dictionaries.json") as d:
+        with open("dictionaries.json", 'rb') as d:
             self.dictionaries = json.load(d)
 
     def edit_points(self, round_points, team_points, team):
@@ -107,6 +107,7 @@ class Alias:
             введите любое иное значение либо просто нажмите 'Enter'.
         """
         )
+		print(f"\nСловарь: {self.dictionary}")
         while check:
             for i in check_team_names:
                 input(f"\nКоманда {i} \nНажмите 'Enter' для начала:")
